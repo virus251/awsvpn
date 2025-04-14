@@ -13,7 +13,7 @@ This guide provides detailed, step-by-step instructions for beginners to set up 
 7. Configure security group with these inbound rules:
    - SSH (port 22) from your IP
    - Custom UDP (port 1194) from anywhere (0.0.0.0/0)
-     or can change the port number but then make sure to use that port in configuration files
+     or you can change the port number as follows but then make sure to use that port in configuration files 
    - Custom UDP (port 1195) from anywhere (0.0.0.0/0) 
 8. Create or select a key pair which you named/generated "xxxx.pem"
 9. Launch the instance
@@ -344,26 +344,47 @@ Here replace xxxx.pem with your actual key and YOUR_EC2_PUBLIC_IP with your actu
 ## Use the .ovpn files with OpenVPN clients
 
 For Windows:
-        ◦ Install OpenVPN GUI 
-        ◦ Right-click the OpenVPN GUI icon and run as administrator 
-        ◦ Right-click the system tray icon 
-        ◦ Select "Import file" and choose your .ovpn file which you downloaded 
-        ◦ Click "Connect" to establish the VPN connection 
+
+  ◦ Install OpenVPN GUI 
+  
+  ◦ Right-click the OpenVPN GUI icon and run as administrator 
+  
+  ◦ Right-click the system tray icon 
+  
+  ◦ Select "Import file" and choose your .ovpn file which you downloaded 
+  
+  ◦ Click "Connect" to establish the VPN connection 
+  
+  
 For macOS:
-        ◦ Install Tunnelblick 
-        ◦ Double-click the .ovpn file 
-        ◦ Follow prompts to import the configuration 
-        ◦ Click "Connect" button 
+
+ ◦ Install Tunnelblick 
+ 
+ ◦ Double-click the .ovpn file 
+ 
+ ◦ Follow prompts to import the configuration 
+ 
+ ◦ Click "Connect" button 
+ 
 For Android:
-        ◦ Install OpenVPN Connect from the Play Store 
-        ◦ Tap the + icon 
-        ◦ Select "Import" and locate your .ovpn file 
-        ◦ Tap "Add" and then "Connect" 
+
+ ◦ Install OpenVPN Connect from the Play Store 
+ 
+ ◦ Tap the + icon 
+ 
+ ◦ Select "Import" and locate your .ovpn file 
+ 
+ ◦ Tap "Add" and then "Connect" 
+ 
 For iOS:
-        ◦ Install OpenVPN Connect from the App Store 
-        ◦ Share the .ovpn file to the OpenVPN app 
-        ◦ Tap "Add" when prompted 
-        ◦ Tap the toggle to connect 
+
+ ◦ Install OpenVPN Connect from the App Store 
+ 
+ ◦ Share the .ovpn file to the OpenVPN app 
+ 
+ ◦ Tap "Add" when prompted 
+ 
+ ◦ Tap the toggle to connect 
         
 Verify the IP location and connection DNS server for any potential DNS leaks using https://dnsleaktest.com/ 
 
